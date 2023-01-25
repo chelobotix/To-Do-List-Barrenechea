@@ -4,7 +4,7 @@
 
   <img src="src/assets/images/to-do-list.png" alt="logo" width="400"  height="auto" />
   <br/>
-  <img src="src/assets/images/Logo Barrenechea.png" alt="logo" width="300"  height="auto" />
+  <img src="src/assets/images/Logo_Barrenechea.png" alt="logo" width="300"  height="auto" />
   <br/>
 
   <h3><b>To Do List</b></h3>
@@ -30,7 +30,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 Protoje Concert - Capstone Micorverse Project Module 1<a name="about-project"></a>
+# 📖 To Do List - Micorverse Project Module 2<a name="about-project"></a>
 
 > To Do List App developed with html, css, js and webpack
 
@@ -59,7 +59,7 @@
 
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
-<a href="https://chelobotix.github.io/To-Do-List/">Visit the Live Demo</a>
+<a href="https://chelobotix.github.io/To-Do-List-Barrenechea/">Visit the Live Demo</a>
 <br/>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -102,7 +102,7 @@ Clone this repository to your desired folder:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Local Storage**
+- [ ] **Drag & Drop Tasks**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -122,7 +122,6 @@ If you like this project please let me know
 
 My mother. Let's play to the end together ❤️ with 🧠
 <br/>
-Cindy Shin. This project was adapted from Cindy Shin's <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">template</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,8 +135,8 @@ Cindy Shin. This project was adapted from Cindy Shin's <a href="https://www.beha
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](<a href="https://github.com/chelobotix/To-Do-List/blob/Html_Skeleton_and_basic_JS/license">License</a>) licensed.
+This project is [MIT](<a href="https://github.com/chelobotix/To-Do-List-Barrenechea/blob/main/LICENSE">License</a>) licensed.
 
-<a href="https://github.com/chelobotix/To-Do-List/blob/Html_Skeleton_and_basic_JS/license">License</a>
+<a href="https://github.com/chelobotix/To-Do-List-Barrenechea/blob/main/LICENSE">License</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

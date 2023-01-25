@@ -1,0 +1,15 @@
+/* stylelint-disable */
+@font-face {
+  font-family: "MyFont";
+  src: url(".//assets/fonts/SofiaSans-Regular.ttf") format("truetype"),
+    url("./assets/fonts/SofiaSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+}
+/* stylelint-enable */
+
+h1 {
+  color: orangered;
+  font-family: "MyFont", sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+}

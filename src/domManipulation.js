@@ -45,7 +45,7 @@ const displayTasks = () => {
   });
 
   document.querySelectorAll('form.taskInput').forEach((form, index) => {
-    //update state
+    // update state
     if (task.getTasks()[index].completed) {
       form.elements.text.classList.add('line-through');
       form.elements.checkbox.checked = true;

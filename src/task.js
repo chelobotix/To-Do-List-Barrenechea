@@ -31,6 +31,11 @@ export default class Task {
     localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
   }
 
+  updateState = (index, state) => {
+    this.#tasks[index].completed = state;
+    localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
+  }
+
   updateIndex() {
     this.#tasks.forEach((task, index) => {
       task.index = index + 1;

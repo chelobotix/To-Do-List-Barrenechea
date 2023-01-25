@@ -15,17 +15,15 @@ const displayTasks = () => {
   /* ----------------------------------- DOM ---------------------------------- */
   let aux = '';
   task.getTasks().forEach((task) => {
-    if (!task.completed) {
-      aux += `<li>
+    aux += `<li>
         <form class="taskInput" id="formTask_${task.index}">
           <input class="taskInput" type="checkbox" id="task_${task.index}" name="checkbox"></input>
-          <input class="taskInput" type="text" name="text" value="${task.description}"/>
+          <input id="textTask_${task.index}" class="taskInput" type="text" name="text" value="${task.description}"/>
           <a class="more" href="">
             <img id="imgMore_${task.index}" class="more" src="./assets/images/more.png" alt="more" />
           </a>
         </form>
       </li>`;
-    }
   });
   ul.innerHTML = aux;
 
@@ -47,6 +45,14 @@ const displayTasks = () => {
   });
 
   document.querySelectorAll('form.taskInput').forEach((form, index) => {
+    //update state
+    if (task.getTasks()[index].completed) {
+      form.elements.text.classList.add('line-through');
+      form.elements.checkbox.checked = true;
+    } else {
+      form.elements.text.classList.remove('line-through');
+      form.elements.checkbox.checked = false;
+    }
     const identifier = `#imgMore_${index + 1}`;
     form.elements.text.addEventListener('focus', (e) => {
       formatForm(identifier, form, e);
@@ -67,8 +73,10 @@ const displayTasks = () => {
     form.elements.checkbox.addEventListener('change', (e) => {
       if (e.currentTarget.checked) {
         form.elements.text.classList.add('line-through');
+        task.updateState(index, true);
       } else {
         form.elements.text.classList.remove('line-through');
+        task.updateState(index, false);
       }
     });
   });

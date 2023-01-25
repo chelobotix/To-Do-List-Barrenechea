@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/To-Do-List/issues"
+    "url": "hgit+https://github.com/chelobotix/To-Do-List-Barrenechea.gitt/issues"
   },
-  "homepage": "https://github.com/To-Do-List#readme",
+  "homepage": "git+https://github.com/chelobotix/To-Do-List-Barrenechea.git",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.3",
@@ -33,5 +33,10 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
+  },
+  "main": "webpack.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chelobotix/To-Do-List-Barrenechea.git"
   }
 }

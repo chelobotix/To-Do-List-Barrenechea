@@ -53,6 +53,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **To Do List Generate with Webpack**
+- **CRUD options**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -15,11 +15,27 @@ export default class Task {
     localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
   }
 
-  removeBook = (index) => {
+  removeTask = (index) => {
     const result = this.#tasks.filter((task, i) => i !== index);
     this.#tasks = result;
+  }
+
+  removeMultiple = (array) => {
+    for (let i = array.length - 1; i >= 0; i -= 1) {
+      this.#tasks.splice(array[i], 1);
+    }
+  };
+
+  updateTask = (index, content) => {
+    this.#tasks[index].description = content;
     localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
-    window.location.reload();
+  }
+
+  updateIndex() {
+    this.#tasks.forEach((task, index) => {
+      task.index = index + 1;
+    });
+    localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
   }
 
   getTasks = () => this.#tasks;

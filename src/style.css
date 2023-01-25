@@ -64,11 +64,10 @@ main section ul li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 94%;
+  width: 100%;
   height: 50px;
   gap: 10px;
   border-bottom: 1px solid #7d7d7d;
-  padding: 0 3% 0 3%;
 }
 
 main section ul li .more {
@@ -82,21 +81,32 @@ main section div.clearAll p.clearAll {
   color: #7d7d7d;
 }
 
+main section div.clearAll p.clearAll:hover {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 form.taskInput {
   width: 100%;
   display: flex;
   justify-content: flex-start;
   height: 50px;
-  padding: 0;
+  padding: 0 3% 0 3%;
 }
 
 input[type="text"].taskInput {
   border: none;
-  width: 90%;
+  width: 100%;
   height: 90%;
   font-size: 14px;
 }
 
-input[type="text"].taskInput:focus {
+.formBGFocus {
   background-color: #fffec4;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #7d7d7d;
 }

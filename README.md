@@ -54,12 +54,14 @@
 
 - **To Do List Generate with Webpack**
 - **CRUD options**
+- **Implement a removeMultiple method to Task Class for the "Clear all completed" button (array method used: filter())**
+![image](https://user-images.githubusercontent.com/65084923/214882200-76eba4c8-6aee-48e1-a4e3-a4fe0abe05ed.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🧑🏻‍💻 Live Demo <a name="live-demo"></a>
 
-<a href="https://chelobotix.github.io/To-Do-List-Barrenechea/">Visit the Live Demo</a>
+<a href="https://chelobotix.github.io/To-Do-List-Barrenechea/dist/">Visit the Live Demo</a>
 <br/>
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -69,10 +71,13 @@ To get a local copy up and use as a template for your own portafolio site, follo
 ### Prerequisites
 
 In order to run this project you need: Git and Nodejs installed in your system and Webpack knowledge<br/>
-NPM dependecies needed:
-
+Please Install all NPM dependecies needed:
 ```sh
 npm install
+```
+Run the app with:
+```sh
+npm run
 ```
 
 ### Clone

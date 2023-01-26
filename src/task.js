@@ -21,10 +21,9 @@ export default class Task {
   }
 
   removeMultiple = (array) => {
-    for (let i = array.length - 1; i >= 0; i -= 1) {
-      this.#tasks.splice(array[i], 1);
-    }
-  };
+    const result = this.#tasks.filter((elem, index) => array.indexOf(index) === -1);
+    this.#tasks = result;
+  }
 
   updateTask = (index, content) => {
     this.#tasks[index].description = content;

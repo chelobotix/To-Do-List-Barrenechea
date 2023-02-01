@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1675290839902" clover="3.2.0">
+  <project timestamp="1675290839902" name="All files">
+    <metrics statements="25" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="3" elements="38" coveredelements="16" complexity="0" loc="25" ncloc="25" packages="1" files="1" classes="1"/>
+    <file name="addDeleteTask.js" path="H:\Microverse\Block_2\To-Do-List-Barrenechea\src\util\addDeleteTask.js">
+      <metrics statements="25" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="3"/>
+      <line num="2" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="8" count="1" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="19" count="0" type="stmt"/>
+      <line num="20" count="0" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+      <line num="24" count="0" type="stmt"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="28" count="1" type="stmt"/>
+      <line num="29" count="0" type="stmt"/>
+      <line num="30" count="0" type="stmt"/>
+      <line num="33" count="1" type="stmt"/>
+      <line num="34" count="0" type="stmt"/>
+      <line num="35" count="0" type="stmt"/>
+      <line num="39" count="0" type="stmt"/>
+      <line num="40" count="0" type="stmt"/>
+      <line num="42" count="0" type="stmt"/>
+      <line num="45" count="1" type="stmt"/>
+      <line num="47" count="1" type="stmt"/>
+      <line num="49" count="1" type="stmt"/>
+      <line num="50" count="0" type="stmt"/>
+    </file>
+  </project>
+</coverage>

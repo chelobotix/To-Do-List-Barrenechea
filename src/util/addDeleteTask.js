@@ -1,8 +1,11 @@
+import { fillStorage, storage } from '../../test/__mocks__/fakelocalstorage.js';
+
 export default class Task {
   #tasks = [];
 
   constructor() {
     this.#tasks = [];
+    fillStorage();
   }
 
   addTask = (description, completed, index) => {
@@ -12,6 +15,7 @@ export default class Task {
       index,
     };
     this.#tasks.push(newTask);
+    storage.push(newTask);
     localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
     const li = document.createElement('li');
     li.textContent = `${this.#tasks[this.#tasks.length - 1].description}`;

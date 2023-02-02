@@ -13,33 +13,14 @@ export default class Task {
     };
     this.#tasks.push(newTask);
     localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
+    const li = document.createElement('li');
+    li.textContent = `${this.#tasks[this.#tasks.length - 1].description}`;
+    return li;
   }
 
   removeTask = (index) => {
     const result = this.#tasks.filter((task, i) => i !== index);
     this.#tasks = result;
-  }
-
-  removeMultiple = (array) => {
-    const result = this.#tasks.filter((elem, index) => array.indexOf(index) === -1);
-    this.#tasks = result;
-  }
-
-  updateTask = (index, content) => {
-    this.#tasks[index].description = content;
-    localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
-  }
-
-  updateState = (index, state) => {
-    this.#tasks[index].completed = state;
-    localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
-  }
-
-  updateIndex() {
-    this.#tasks.forEach((task, index) => {
-      task.index = index + 1;
-    });
-    localStorage.setItem('localStorageTasks', JSON.stringify(this.#tasks));
   }
 
   getTasks = () => this.#tasks;
